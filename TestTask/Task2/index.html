@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+
+    <form id="form">
+        <label for="name">Name (necessarily)</label>
+        <input  id="name" name="name" required>
+        <span class="errorMess" id="errorName"></span>
+        <br>
+        <label for="phone">Phone (necessarily)</label>
+        <input type="number" id="phone" name="phone"required>
+        <span class="errorMess" id="errorPhone"></span>
+        <br>
+        <label for="email">Email (necessarily)</label>
+        <input type="email" id="email" name="email" required>
+        <span class="errorMess" id="errorEmail"></span>
+         <br>
+
+         <button type="submit" id="Send">Send form</button>
+    </form>
+    <script src="validate.js"></script>
+</body>
+</html>

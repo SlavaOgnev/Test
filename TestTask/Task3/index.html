@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Динамические списки</title>
+    <style>
+        ul, ol {
+            list-style-type: none; /* Убираем стандартные маркеры списка */
+        }
+        li {
+            margin: 5px 0; /* Отступы между элементами списка */
+        }
+    </style>
+</head>
+<body>
+
+<h1>Пример списка с вложенными элементами</h1>
+<ul>
+    <li>
+        <a href="#">Элемент 1</a>
+        <ul>
+            <li><a href="#">Подэлемент 1.1</a></li>
+            <li><a href="#">Подэлемент 1.2</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#">Элемент 2</a>
+        <ul>
+            <li>
+                <a href="#">Подэлемент 2.1</a>
+                <ul>
+                    <li><a href="#">Подподэлемент 2.1.1</a></li>
+                    <li><a href="#">Подподэлемент 2.1.2</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Подэлемент 2.2</a></li>
+        </ul>
+    </li>
+    <li><a href="#">Элемент 3 (без вложенного списка)</a></li>
+</ul>
+
+<script src="index.js"></script>
+</body>
+</html>

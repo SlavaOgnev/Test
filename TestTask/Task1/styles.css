@@ -1,0 +1,67 @@
+body{
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.catalog{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+}
+
+/* Товары */
+.item{
+    padding: 30px;
+    text-align: center;
+    border: 2px solid rgb(0, 136, 255);
+    -ms-grid-column-span: 2;
+    grid-column: span 2;
+    background-color: rgb(132, 140, 244);
+}
+
+
+/* Адаптация под меньшие экраны */
+@media screen and  (max-width:1023px){
+    .item{
+        -ms-grid-column-span: 3;
+        grid-column: span 3;
+    }
+    
+}
+
+@media screen and  (max-width:767px){
+    .item{
+        -ms-grid-column-span: 6;
+        grid-column: span 6;
+    }
+    
+}
+
+/* Подзадание с добавлением кнопки */
+
+.contanier{
+    text-align: center;
+}
+
+button{
+    margin-top: 20px;
+    color: white;
+    height: 30px;
+    background-color: rgb(0, 136, 255);
+    cursor: pointer;
+    border: 2px solid rgb(132, 140, 244);
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+    button:hover {
+    transform: scale(0.9); 
+}
+
+
+.catalog.listView{
+    grid-template-columns: 1fr;
+}

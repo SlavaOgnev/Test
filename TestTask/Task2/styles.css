@@ -1,0 +1,18 @@
+body{
+    text-align: center;
+}
+
+label{
+    margin-top: 10px;
+}
+
+button, input{
+    margin-top: 10px;
+}
+
+.errorMess {
+    color: red;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+}
